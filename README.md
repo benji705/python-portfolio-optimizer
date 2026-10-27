@@ -28,3 +28,14 @@ Voici la répartition optimale des actifs calculée pour maximiser le rendement 
 * **La Sécurité :** La grande majorité des scénarios finit au-dessus du capital initial, indiquant une probabilité de perte totale faible sur la période étudiée.
 
 
+
+## ⚙️ Installation et utilisation
+
+```bash
+git clone https://github.com/benji705/python-portfolio-optimizer.git
+cd python-portfolio-optimizer
+pip install -r requirements.txt
+python main.py
+```
+
+Les graphiques sont enregistrés dans le dossier courant (`frontiere_efficiente.png`, `repartition.png`, `monte_carlo.png`).

@@ -93,7 +93,7 @@ ax = rp.plot_frontier(w_frontier=frontier, mu=mu, cov=cov, returns=Y, rm=rm,
                       rf=rf, alpha=0.05, cmap='viridis', w=w, 
                       label='Portefeuille Optimal', 
                       marker='*', s=16, c='r', height=6, width=10, ax=None)
-plt.savefig()
+plt.savefig("frontiere_efficiente.png", dpi=150, bbox_inches="tight")
 plt.show()
 print("Graphique généré ! Regardez la nouvelle fenêtre.")
 
@@ -107,7 +107,7 @@ print("\nGénération du graphique de répartition (Camembert)...")
 # title = le titre du graphique
 # cmap = le jeu de couleurs (tab20 est joli)
 ax = rp.plot_pie(w=w, title='Mon Allocation Optimale', cmap="tab20", height=6, width=10, ax=None)
-plt.savefig()
+plt.savefig("repartition.png", dpi=150, bbox_inches="tight")
 plt.show()
 
 
@@ -151,7 +151,7 @@ plt.title(f'Simulation Monte Carlo : 1000 futurs possibles pour vos {start_price
 plt.xlabel('Jours futurs')
 plt.ylabel('Valeur du portefeuille (€)')
 plt.legend()
-plt.savefig()
+plt.savefig("monte_carlo.png", dpi=150, bbox_inches="tight")
 plt.show()
 
 # 5. Analyse du Risque (Value at Risk)
